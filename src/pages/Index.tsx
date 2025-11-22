@@ -2,17 +2,15 @@ import { Card } from "@/components/ui/card";
 import { SplineScene } from "@/components/ui/spline";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Button } from "@/components/ui/button";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-6">
+  return <div className="min-h-screen bg-background flex items-center justify-center p-6">
       <div className="w-full max-w-6xl">
         <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden">
           <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
           
           <div className="flex h-full">
             {/* Left content */}
-            <div className="flex-1 p-8 relative z-10 flex flex-col justify-center">
+            <div className="flex-1 p-8 relative z-10 flex flex-col justify-center text-gray-50">
               <p className="font-inter font-bold text-[30px] md:text-[44px] text-[#111111] leading-[1.3] tracking-[-0.03em] max-w-[680px] mx-auto mb-6">
                 Tu hijo no necesita más contenido.<br />
                 Necesita una forma de empezar a imaginar otra vez.
@@ -30,8 +28,6 @@ const Index = () => {
           </div>
         </Card>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
