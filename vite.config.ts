@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Set base to '/' for production (GitHub Pages will be at root of custom domain)
+  // or set to '/imagine-labs/' if deploying to t-montes.github.io/imagine-labs/
+  base: process.env.GITHUB_PAGES === 'true' ? '/imagine-labs/' : '/',
   server: {
     host: "::",
     port: 8080,
