@@ -2,8 +2,10 @@ import { Card } from "@/components/ui/card";
 import { SplineScene } from "@/components/ui/spline";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Button } from "@/components/ui/button";
+
 const Index = () => {
-  return <div className="min-h-screen bg-background flex items-center justify-center p-6">
+  return (
+    <div className="min-h-screen bg-background flex items-center justify-center p-6">
       <div className="w-full max-w-6xl">
         <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden">
           <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
@@ -11,14 +13,14 @@ const Index = () => {
           <div className="flex h-full">
             {/* Left content */}
             <div className="flex-1 p-8 relative z-10 flex flex-col justify-center">
-            <p className="font-playfair text-[28px] md:text-[40px] text-black leading-[1.4] tracking-[-0.02em] max-w-lg">
-              Estamos devolviendo la creatividad a una generación que está perdiendo la capacidad de imaginar.    <br />
-              Necesita una forma de empezar a imaginar otra vez."
-            </p>
-            
-            <Button className="mt-6 bg-white text-white hover:bg-neutral-200 font-inter font-medium text-base tracking-[0.01em] px-8 py-4 rounded-lg">
-              Descubre Imagine Lab
-            </Button>
+              <p className="font-inter font-bold text-[30px] md:text-[44px] text-[#111111] leading-[1.3] tracking-[-0.03em] max-w-[680px] mx-auto mb-6">
+                Tu hijo no necesita más contenido.<br />
+                Necesita una forma de empezar a imaginar otra vez.
+              </p>
+              
+              <Button className="bg-white text-white hover:bg-neutral-200 font-inter font-medium text-[15px] tracking-[0.02em] px-9 py-4 rounded-[6px]">
+                Descubre Imagine Lab
+              </Button>
             </div>
 
             {/* Right content */}
@@ -28,6 +30,8 @@ const Index = () => {
           </div>
         </Card>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
