@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { SplineScene } from "@/components/ui/spline";
 import { Spotlight } from "@/components/ui/spotlight";
+import { Button } from "@/components/ui/button";
 const Index = () => {
   return <div className="min-h-screen bg-background flex items-center justify-center p-6">
       <div className="w-full max-w-6xl">
@@ -10,13 +11,14 @@ const Index = () => {
           <div className="flex h-full">
             {/* Left content */}
             <div className="flex-1 p-8 relative z-10 flex flex-col justify-center">
-              <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                Imagine Lab   
-              </h1>
-              <p className="mt-4 text-neutral-300 max-w-lg">
-                Experimenta cómo los niños crean mundos completos usando solo su voz y gestos. 
-                Computer vision y AI transformando imaginación en realidad instantánea.
-              </p>
+            <p className="text-lg md:text-xl text-neutral-300 max-w-lg leading-relaxed">
+              "Tu hijo no necesita más contenido.<br />
+              Necesita una forma de empezar a imaginar otra vez."
+            </p>
+            
+            <Button className="mt-6 bg-white text-black hover:bg-neutral-200">
+              Descubre Imagine Lab
+            </Button>
             </div>
 
             {/* Right content */}
