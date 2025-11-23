@@ -14,7 +14,7 @@ const Index = () => {
               Necesita una forma de empezar a imaginar otra vez.
             </p>
             
-            <a href="https://t-montes.github.io/platanus-hack-25-team-25/public/index.html" target="_blank" rel="noopener noreferrer" className="inline-block">
+            <a href="https://platanus-hack-25-team-25-production.up.railway.app/" target="_blank" rel="noopener noreferrer" className="inline-block">
               <Button className="bg-white text-black hover:bg-neutral-100 hover:scale-105 transition-all duration-200 font-inter font-semibold tracking-[0.02em] px-20 text-center rounded-lg py-10 text-4xl shadow-lg hover:shadow-xl">
                 Descubre Imagine Lab
               </Button>
